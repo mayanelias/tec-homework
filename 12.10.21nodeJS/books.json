@@ -1,0 +1,5 @@
+[
+  { "name": "book1", "description": "my book is good", "pages": 789 },
+  { "name": "book2", "description": "my name is dan", "pages": 456 },
+  { "name": "book3", "description": "dear node i am here", "pages": 123 }
+]
