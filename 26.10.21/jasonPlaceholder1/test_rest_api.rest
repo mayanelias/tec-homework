@@ -1,0 +1,15 @@
+GET http://localhost:8080/comments
+###
+GET http://localhost:8080/comments/1
+###
+POST http://localhost:8080/comments
+Content-Type: application/json
+
+{
+    "name" : "help gil",
+    "body" : "tftftfgfghfhf",
+    "email": "bjbjbjbjkbbjkjkbjk"    
+}
+
+###
+DELETE http://localhost:8080/comments/0
