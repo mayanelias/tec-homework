@@ -1,0 +1,23 @@
+GET http://localhost:8080/todos
+
+###
+GET http://localhost:8080/todos/617faa02d1839bc23a7c15d8
+###
+POST http://localhost:8080/todos
+Content-Type: application/json
+
+{
+"title":"fffdhfdhdh",
+"completed":"true"
+}
+
+###
+DELETE http://localhost:8080/todos/617faa02d1839bc23a7c15d7
+###
+PATCH  http://localhost:8080/todos/617faa02d1839bc23a7c15d8
+Content-Type: application/json
+
+{
+"title":"read books",
+"completed":"false"
+}
