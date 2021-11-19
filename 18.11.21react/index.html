@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<main id="app"></main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js"></script>  
+<script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>  
+<script type="text/babel">
+const car={brand:"subaro",price:20000,year:2015}
+const name="Maayan";
+//!1//
+function Hello(){
+return <h1>Hello</h1>
+}
+//!2//
+function Car(){
+return <h1> brand: {car.brand} price: {car.price} year: {car.year}</h1>
+}
+//!3//
+function Name(){
+return <div><Hello/><h1>{name}</h1></div>
+}
+//!5//
+function Header(){
+return <h1>This is Header</h1>
+}
+function Main(){
+return <h1>This is Main</h1>
+
+}
+function Footer(){
+return <h1>&copy;This is Footer</h1>
+}
+//!6//
+function Welcome(props) {
+  return <h1>Hello {props.name}</h1>;
+}
+//!7//
+function NameAge(props) {
+  return <h1>{props.name} {props.age}</h1>
+}
+//!8//
+function Img(props) {
+return <img src={props.src}/>
+}
+//!9//
+function Video(props) {
+return <video width="320" height="240" controls src={props.src}/>
+}
+//!10//
+//props=כאשר React רואה אלמנט המייצג קומפוננטה שהודגרה על ידי המשתמש, היא מעבירה את המאפיינים שהוגדרו ב-JSX ואת ה”ילדים” לקומפוננטה זו כאובייקט יחיד. אנו קוראים לאובייקט זה “props”.
+const domElement=document.getElementById("app")
+ReactDOM.render(
+<div>
+<Welcome name="mayan"/>
+<Welcome name="ruti"/>
+<Welcome name="anat"/>
+<Welcome name="shmuel"/>
+<Welcome name="jacob"/>
+<Welcome name="segedu"/>
+<Welcome name="haim"/>
+<Welcome name="asres"/>
+<Welcome name="gal"/>
+<Welcome name="brano"/>
+<NameAge name="brano" age="22"/>
+<NameAge name="gal" age="20"/>
+<NameAge name="asres" age="27"/>
+<NameAge name="haim" age="29"/>
+<NameAge name="segedu" age="24"/>
+<NameAge name="jacob" age="27"/>
+<NameAge name="shmuel" age="27"/>
+<NameAge name="anat" age="27"/>
+<NameAge name="ruti" age="28"/>
+<NameAge name="mayan" age="28"/>
+<Img src="https://cdn.pixabay.com/photo/2018/11/19/05/53/animal-3824672__480.jpg"/>
+<Img src="https://cdn.pixabay.com/photo/2020/10/20/20/41/horse-5671492__480.jpg"/>
+<Img src="https://cdn.pixabay.com/photo/2021/11/05/03/38/couple-6770226__480.jpg"/>
+<Video src="https://player.vimeo.com/external/544315311.hd.mp4?s=4b1c9ca81fc785d973f62f6df807f78c317243cb&profile_id=174"/>
+<Video src="https://player.vimeo.com/external/554074757.hd.mp4?s=9eb8c91f8c2de88e8ec50a112e407e82ae6fae51&profile_id=174"/>
+<Video src="https://player.vimeo.com/external/516532097.sd.mp4?s=644e0e4b8427c25c0b422f831b36a1cc17ead76f&profile_id=165"/>
+<Header/>
+<Main/>
+<Hello/>
+<Car/>
+<Car/>
+<Car/>
+<Car/>
+<Car/>
+<Car/>
+<Car/>
+<Car/>
+<Car/>
+<Car/>
+<Name/>
+<Footer/>
+</div>,
+domElement)
+</script>
+</html>
