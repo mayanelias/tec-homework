@@ -1,0 +1,18 @@
+
+ul{
+list-style-type: none;
+}
+li{
+font-family: fantasy;
+font-weight: bolder;
+}
+.persons button{
+border: none;
+border-radius: 5%;
+width: 10%;
+height: 5vh;
+background-color: black;
+color: whitesmoke;
+margin-left: 20px;
+font-family: fantasy;
+}
